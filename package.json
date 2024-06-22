@@ -1,0 +1,29 @@
+{
+  "name": "black-hole-simulation",
+  "version": "1.0.0",
+  "author": "Oscar 'Nebe' Abad",
+  "description": "A WebGL-based simulation of particle flow in a black hole singularity",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "webgl",
+    "threejs",
+    "simulation",
+    "black hole"
+  ],
+  "dependencies": {
+    "three": "^0.150.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
