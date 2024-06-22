@@ -4,6 +4,8 @@
 
 This project is a WebGL-based simulation of particle behavior around a black hole, created using Three.js and GLSL shaders. It demonstrates complex particle systems, GPU-based computations, and advanced rendering techniques.
 
+![Black Hole Particle Simulation screen recording](screen-sim.gif)
+
 ## Features
 
 - Real-time simulation of thousands of particles
