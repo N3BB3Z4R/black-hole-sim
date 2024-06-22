@@ -35,12 +35,12 @@ To install the project, follow these steps:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/black-hole-particle-simulation.git
+   git clone https://github.com/your-username/black-hole-sim.git
    ```
 
 2. Navigate to the project directory:
    ```
-   cd black-hole-particle-simulation
+   cd black-hole-sim
    ```
 
 3. Install the dependencies:
@@ -71,5 +71,6 @@ You can customize various aspects of the simulation by modifying the constants a
 - `CENTER_MASS`, `PARTICLE_MASS`, `VELOCITY_TERMINAL`: Physics parameters
 - `CURL_RADIUS`, `CURL_FORCE_FACTOR`, `PULL_FORCE_FACTOR`: Force field parameters
 - `INITIAL_RADIUS_FACTOR`, `INITIAL_RADIUS_EXPONENT`: Initial particle distribution
+- ...
 
 After modifying these values, restart the development server to see the changes.
