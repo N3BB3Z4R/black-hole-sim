@@ -6,26 +6,26 @@ import { GPUComputationRenderer } from 'three/examples/jsm/misc/GPUComputationRe
 
 // Simulation parameters
 const TEXTURE_SIZE = 2048; // Size of the simulation texture (particle count will be TEXTURE_SIZE^2)
-const CAMERA_FOV = 45; // Field of view of the camera
-const CAMERA_NEAR = 0.001; // Near clipping plane of the camera
-const CAMERA_FAR = Math.pow(2, 16); // Far clipping plane of the camera
+const CAMERA_FOV = 70; // Field of view of the camera
+const CAMERA_NEAR = 0.0001; // Near clipping plane of the camera
+const CAMERA_FAR = Math.pow(2, 32); // Far clipping plane of the camera
 const CAMERA_INITIAL_POSITION = 8; // Initial Z position of the camera
 
 // Particle system parameters
-const POINT_SIZE = 1.0; // Size of each particle
+const POINT_SIZE = 100.0; // Size of each particle
 const PARTICLE_COLOR = [1.0, 0.10, 0.05, 0.4]; // Color of particles [r, g, b, a]
 
 // Physics parameters
-const CENTER_MASS = 0.7; // Mass of the central body (affects gravitational pull)
-const PARTICLE_MASS = 0.7; // Mass of each particle
-const VELOCITY_TERMINAL = 0.42; // Terminal velocity of particles
-const CURL_RADIUS = 0.24; // Radius of influence for curl noise
-const CURL_FORCE_FACTOR = 1.0; // Factor to adjust the strength of curl force
-const PULL_FORCE_FACTOR = 1.2; // Factor to adjust the strength of gravitational pull
+const CENTER_MASS = 1.1; // Mass of the central body (affects gravitational pull)
+const PARTICLE_MASS = 0.3; // Mass of each particle
+const VELOCITY_TERMINAL = 0.12; // Terminal velocity of particles
+const CURL_RADIUS = 0.34; // Radius of influence for curl noise
+const CURL_FORCE_FACTOR = 0.30; // Factor to adjust the strength of curl force
+const PULL_FORCE_FACTOR = 0.4; // Factor to adjust the strength of gravitational pull
 
 // Initial particle distribution parameters
-const INITIAL_RADIUS_FACTOR = 20; // Factor to determine the initial spread of particles
-const INITIAL_RADIUS_EXPONENT = 4; // Exponent to adjust the initial radial distribution
+const INITIAL_RADIUS_FACTOR = 5; // Factor to determine the initial spread of particles
+const INITIAL_RADIUS_EXPONENT = 1; // Exponent to adjust the initial radial distribution
 
 // Based on: https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83#simplex-noise
 const shaderPartialSimplexNoise = `
