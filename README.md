@@ -2,7 +2,7 @@
 
 ![Black Hole Particle Simulation screenshot](screenshot.png)
 
-This project is a WebGL-based simulation of particle behavior inside a black hole singularity, created using Three.js and GLSL shaders. It demonstrates complex particle systems, GPU-based computations, and advanced rendering techniques.
+This project is a WebGL-based (non scientific) simulation of particle behavior inside a black hole singularity, created using Three.js and GLSL shaders. It demonstrates complex particle systems, GPU-based computations, and advanced rendering techniques.
 
 ![Black Hole Particle Simulation screen recording](screen-sim.gif)
 
